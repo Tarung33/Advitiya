@@ -76,18 +76,19 @@ nav .logos {
 
 /* Hero Section */
 header {
-  min-height: 100vh;
+  min-height: auto; 
   background: url("assets/Untitled\ design\ \(6\).png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 80px 20px 40px; 
+  padding: 40px 20px 40px; 
 }
 
 .hero-content {
   position: relative;
+  margin-top: 120px;
   z-index: 2;
 }
 
@@ -124,6 +125,7 @@ header::after {
   gap: 100px;
   z-index: 2;
   position: relative;
+  margin-top: 120px;
 }
 
 /* Left Logos */
@@ -394,7 +396,7 @@ footer {
   padding: 5px;
   border-radius: 20px;
   display: block;       
-  margin: 0 auto;         
+  margin: 10px auto;         
 }
 
 
