@@ -76,13 +76,14 @@ nav .logos {
 
 /* Hero Section */
 header {
-  height: 135vh;
+  min-height: 100vh;
   background: url("assets/Untitled\ design\ \(6\).png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  padding: 80px 20px 40px; 
 }
 
 .hero-content {
@@ -119,7 +120,6 @@ header::after {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 100%;
   margin: auto;
   gap: 100px;
   z-index: 2;
@@ -159,7 +159,7 @@ header::after {
 }
 
 .hero-right h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #d4af37;
   margin: 0;
 }
@@ -262,12 +262,37 @@ ul li::before {
 
 .card {
   background: #111;
-  padding: 25px;
-  border-radius: 12px;
-  width: 260px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  flex: 1 1 30%;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.card.active {
+  flex: 1 1 100%; /* expand full width */
+  max-width: 100%;
+}
+
+.card .event-details {
+  display: none;
+  margin-top: 15px;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.card.active .event-details {
+  display: block;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .card:hover {
@@ -328,7 +353,7 @@ footer {
 }
 /* Animated Text */
 .hero-right h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #d4af37;
   font-family: 'Lucida Sans', 'Georgia' sans-serif;
   margin: 0;
@@ -338,7 +363,10 @@ footer {
   color: #d4af37;
   font-weight: bold;
   border-right: 2px solid #d4af37;
-  padding-left: 10px;
+  padding-left: 5px;
+   padding-left: 5px;
+  display: inline; 
+  white-space: nowrap;
 }
 
 .tagline {
@@ -367,5 +395,55 @@ footer {
   border-radius: 20px;
   display: block;       
   margin: 0 auto;         
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px 0;
+  margin-left: 50px;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  color: #fff;
+}
+
+.contact-left p, .contact-left h3 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-left i {
+  color: #d4af37;
+  margin-right: 10px;
+}
+
+.contact-left a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.contact-left a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive (stack for mobile) */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
 }
 

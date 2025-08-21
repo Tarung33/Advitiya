@@ -2,7 +2,8 @@ function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
 
-const words = ["| Inspire", "| Innovate", "| Build", "| Develop", "| Create", "| Explore", "| Lead", "| Inspire"];
+const words = ["| Automation", "| Develop", "| Vision", "| Inspire", "| Transform", "| Innovate", "| Youth", "| Achieve"];
+
 let i = 0;
 let j = 0;
 let currentWord = "";
@@ -33,5 +34,17 @@ function typeEffect() {
 
   setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
 }
+
+function toggleEvent(card) {
+  // Close all other cards
+  document.querySelectorAll('.card').forEach(c => {
+    if (c !== card) {
+      c.classList.remove('active');
+    }
+  });
+  // Toggle clicked card
+  card.classList.toggle('active');
+}
+
 
 document.addEventListener("DOMContentLoaded", typeEffect);

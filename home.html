@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advitiya Tech Club</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Hero Section with Navbar -->
@@ -75,17 +76,64 @@
   </ul>
 </section>
 
-<!-- Events Section -->
 <section id="events">
   <h2>Our Initiatives</h2>
   <div class="events">
-    <div class="card"><h3>Hackathons</h3><p>Fuel creativity and innovation in 24–48 hour coding marathons.</p></div>
-    <div class="card"><h3>Tech Talks</h3><p>Knowledge-sharing sessions with industry leaders and alumni.</p></div>
-    <div class="card"><h3>Workshops</h3><p>Hands-on training on Web Dev, AI, Cloud, IoT, and more.</p></div>
-    <div class="card"><h3>Coding Challenges</h3><p>Regular contests to sharpen problem-solving skills.</p></div>
-    <div class="card"><h3>Innovation Projects</h3><p>Student-led projects addressing real-world challenges.</p></div>
+    
+    <!-- Hackathons -->
+    <div class="card" onclick="toggleEvent(this)">
+      <h3>Hackathons</h3>
+      <p>Fuel creativity and innovation in 24–48 hour coding marathons.</p>
+      <div class="event-details">
+        <h4>Upcoming Events</h4>
+        <ul>
+          <li>Coming Soon</li>
+          
+        </ul>
+        <h4>Completed Events</h4>
+        <ul>
+          <li>No Events Found</li>
+      
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tech Talks -->
+    <div class="card" onclick="toggleEvent(this)">
+      <h3>Tech Talks</h3>
+      <p>Knowledge-sharing sessions with industry leaders and alumni.</p>
+      <div class="event-details">
+        <h4>Upcoming Talks</h4>
+        <ul>
+          <li>Coming Soon</li>
+          
+        </ul>
+        <h4>Completed Talks</h4>
+        <ul>
+          <li>No Events Found</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Workshops -->
+    <div class="card" onclick="toggleEvent(this)">
+      <h3>Workshops</h3>
+      <p>Hands-on training on Web Dev, AI, Cloud, IoT, and more.</p>
+      <div class="event-details">
+        <h4>Upcoming Workshops</h4>
+        <ul>
+          <li>Coming Soon</li>
+        </ul>
+        <h4>Completed Talks</h4>
+        <ul>
+          <li>No Events Found</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- Team Section -->
 <section id="team">
@@ -101,13 +149,54 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
-  <h2>Let’s Connect</h2>
-  <p><b>Email:</b> <a href="mailto:advitiyatechclub@gmail.com">advitiyatechclub@gmail.com</a></p>
-  <p><b>Instagram:</b> <a href="https://instagram.com/advitiya_ait" target="_blank">@advitiya_ait</a></p>
-  <p><b>Location: </b></p>
-  <p>Adichunchanagiri Institute of Technology,<br> Jyothi nagara, Chikkamagaluru – 577102,<br> Karnataka, India.</p>
-</section>
+<div class="contact-container">
+  <div class="contact-left">
+    <h2>Let’s Connect</h2>
+    <p><i class="fas fa-envelope"></i> 
+      <strong>Email:</strong> 
+      <a href="mailto:advitiyatechclub@gmail.com?subject=Joining%20Advitiya%20Tech%20Club&body=Hello,%20I%20would%20like%20to%20join%20the%20club.">
+   advitiyatechclub@gmail.com
+</a>
+
+    </p>
+    <p><i class="fab fa-instagram"></i> 
+      <strong>Instagram:</strong> 
+      <a href="https://instagram.com/advitiya_ait" target="_blank">@advitiya_ait</a>
+    </p>
+    <p><i class="fab fa-facebook"></i> 
+      <strong>Facebook:</strong> 
+      <a href="https://facebook.com/advitiya_ait" target="_blank">facebook.com/advitiya_ait</a>
+    </p>
+    <p><i class="fab fa-linkedin"></i> 
+      <strong>LinkedIn:</strong> 
+      <a href="https://linkedin.com/company/advitiya-ait" target="_blank">linkedin.com/company/advitiya-ait</a>
+    </p>
+    <p><i class="fab fa-twitter"></i> 
+      <strong>Twitter:</strong> 
+      <a href="https://twitter.com/advitiya_ait" target="_blank">@advitiya_ait</a>
+    </p>
+    
+    <h3><i class="fas fa-map-marker-alt"></i> Location:</h3>
+    <p>
+      Adichunchanagiri Institute of Technology,<br>
+      Jyothi nagara, Chikkamagaluru – 577102,<br>
+      Karnataka, India.
+    </p>
+  </div>
+
+  <div class="contact-right">
+    <h2><i class="fas fa-map-pin"></i> Map</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Adichunchanagiri+Institute+of+Technology,+Jyothinagara,+Chikkamagaluru,+Karnataka&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0; border-radius:10px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
 
 <!-- Footer -->
 <footer>
