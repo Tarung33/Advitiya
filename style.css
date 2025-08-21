@@ -77,7 +77,7 @@ nav .logos {
 /* Hero Section */
 header {
   height: 135vh;
-  background: url("assets/New\ web.jpg") no-repeat center/cover;
+  background: url("assets/Untitled\ design\ \(6\).png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,9 +118,10 @@ header::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  gap: 100px;
   z-index: 2;
   position: relative;
 }
@@ -130,12 +131,12 @@ header::after {
   display: flex;
   text-align: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   color: #d4af37;
 }
 
 .hero-logo {
-  max-width: 100px;
+  width: 75%;
   height: auto;
 }
 
@@ -146,8 +147,9 @@ header::after {
 }
 
 .hero-dept-logo {
-  max-width: 220px;
+  max-width: 150px;
   height: auto;
+  margin-left: 30px;
 }
 
 /* Right Text */
@@ -201,9 +203,12 @@ header::after {
     font-size: 2.5rem;
   }
 
-  .hero-logo, .hero-dept-logo {
-    max-width: 150px;
+  .hero-logo {
+    max-width:100%;
   }
+   .hero-dept-logo{
+    width: 150px;
+   }
 }
 
 
